@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client and Contact Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Client Details</h1>
+    <form id="clientForm">
+        <input type="text" id="name" placeholder="Name" required>
+        <input type="number" id="age" placeholder="Age" required>
+        <input type="text" id="gender" placeholder="Gender" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <button type="submit">Add Client</button>
+    </form>
+
+    <h1>Contact Details</h1>
+    <form id="contactForm">
+        <input type="text" id="firstname" placeholder="First Name" required>
+        <input type="text" id="lastname" placeholder="Last Name" required>
+        <input type="text" id="contact" placeholder="Contact" required>
+        <input type="email" id="contactEmail" placeholder="Email" required>
+        <button type="submit">Add Contact</button>
+    </form>
+
+    <script>
+        // Handle client form submission
+        /* document.getElementById('clientForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const age = document.getElementById('age').value;
+            const gender = document.getElementById('gender').value;
+            const email = document.getElementById('email').value;
+
+            fetch('/client_details/add', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ name, age, gender, email })
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Success:', data);
+                alert('Client added successfully!');
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
+        }); */
+        document.getElementById('clientForm').addEventListener('submit', function(event) {
+            event.preventDefault();  // Prevent default form submission behavior
+            const name = document.getElementById('name').value;
+            const age = document.getElementById('age').value;
+            const gender = document.getElementById('gender').value;
+            const email = document.getElementById('email').value;
+        
+            // Ensure the fetch URL points to the correct server address and port
+            fetch('http://127.0.0.1:5000/client_details/add', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ name, age, gender, email })
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Success:', data);
+                alert('Client added successfully!');
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+                alert('There was an error adding the client.');
+            });
+        });
+        
+
+        // Handle contact form submission
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const firstname = document.getElementById('firstname').value;
+            const lastname = document.getElementById('lastname').value;
+            const contact = document.getElementById('contact').value;
+            const contactEmail = document.getElementById('contactEmail').value;
+
+            fetch('/contact_details/add', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ firstname, lastname, contact, contactEmail })
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Success:', data);
+                alert('Contact added successfully!');
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
+        });
+    </script>
+</body>
+</html>

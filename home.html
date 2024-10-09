@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+        font-size: large;
+      }
+
+      .time {
+        border-radius: 10px;
+        width: 200px;
+        margin-left: 45px;
+        text-align: center;
+      }
+
+       .cls {
+            width: 800px;
+            overflow: scroll;
+            display: flex;
+            background-color: white;
+            margin: auto;
+        }
+
+        .cls1 {
+            margin-left: 50px;
+            border-radius: 30px;
+            background-color: whitesmoke;
+        } 
+
+      .cls1:hover {
+        transform: translateY(-5px); 
+      }
+
+      .quote {
+        display: flex;
+      }
+
+      .home {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 50px;
+      }
+
+      .child {
+        flex-basis: 50%;
+      }
+
+      .head {
+        background-image: url("homeb.jpg");
+        background-repeat: no-repeat;
+        object-fit: cover;
+        height: 90vh;
+        background-size: 100% 100%;
+        width: 100%;
+        color: white;
+        text-align: center;
+        border: 0.2px solid #a95ec0;
+      }
+
+      .btn {
+        background-color: #b695c0;
+        border-radius: 4px;
+        border: 2px solid black;
+        width: 100px;
+        height: 40px;
+        font-size: medium;
+        color: black;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .btn:hover {
+        color: black;
+        border: 2px solid black;
+        cursor: pointer;
+        background-color: #845991;
+      }
+      .animated {
+      animation-fill-mode: both;
+    }
+
+    .fade-in-up {
+      opacity: 0;
+      transform: translateY(100px);
+      animation: fadeInUp 1s forwards;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(180px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    </style>
+    <title>Nirvana</title>
+  </head>
+
+  <body>
+    <div class="navbar">
+      <div>
+        <ul>
+          <img src="logo.png" height="60px" width="180px" />
+          <li><a href="home.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="classes.html">CLASSES</a></li>
+          <li><a href="trainers.html">TRAINERS</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="head">
+      <h1>YOGA FITNESS CLUB</h1>
+      <h1>
+        Elevate Your Spirit<br /><span style="color: #a95ec0"
+          >Illuminate Your Soul</span
+        >
+      </h1>
+      <a href="join_us.html">
+      <button class="btn">JOIN US</button>
+    </a>
+    </div>
+    <div>
+      <h1>Sweat, Stretch, Smile</h1>
+      <div class="quote">
+        <div class="home">
+          <div class="child">
+            <h3>HEALTHY LIFE</h3>
+            <img src="heart.png" />
+            <p>
+              Embark on a journey towards a healthier, happier you, where every
+              day is a gift waiting to be unwrapped.
+            </p>
+          </div>
+          <div class="child">
+            <h3>STAY FIT</h3>
+            <img src="balanace.png" />
+            <p>
+              Discover the secret to staying fit and active, just like that
+              unforgettable Christmas gift that keeps on giving.
+            </p>
+          </div>
+          <div class="child">
+            <h3>BALANCED BODY</h3>
+            <img src="fit.png" />
+            <p>
+              Achieve harmony and balance in your life, much like the perfect
+              gift that brought joy and equilibrium on that special Christmas
+              morning.
+            </p>
+          </div>
+          <div class="child">
+            <h3>PERSONAL TRAINER</h3>
+            <img src="trainer.png" />
+            <p>
+              Unwrap the potential within yourself with the guidance of a
+              personal trainer, just as I unwrapped the gift that changed my
+              life on that memorable Christmas day.
+            </p>
+          </div>
+        </div>
+        <div>
+          <img src="quote.jpg" width="300" height="300" />
+        </div>
+      </div>
+    </div>
+    <div class="abc">
+      <h1>CLASSES</h1>
+      <div class="cls">
+        <div class="cls1">
+          <img
+            src="clsimg2.png"
+            height="300"
+            width="300"
+            style="border-radius: 20px"
+          />
+          <h3>Yoga Classes</h3>
+          <p>Daily yoga classes led by experienced instructors....</p>
+          <button id="btn" onclick="showAlert()">READ MORE</button>
+          <p class="time">10:00 AM - 10:45 AM</p>
+        </div>
+        <div class="cls1">
+          <img
+            src="clsimg1.png"
+            height="300"
+            width="300"
+            style="border-radius: 20px"
+          />
+          <h3>Meditation Workshops</h3>
+          <p>Learn meditation techniques to calm your mind and ...</p>
+          <button id="btn" onclick="showAlert()">READ MORE</button>
+          <p class="time">11:00 AM - 12:00 PM</p>
+        </div>
+        <div class="cls1">
+          <img
+            src="clsimg3.png"
+            height="300"
+            width="300"
+            style="border-radius: 20px"
+          />
+          <h3>Fitness Bootcamp</h3>
+          <p>Intensive fitness bootcamp sessions designed to he...</p>
+          <button id="btn" onclick="showAlert()">READ MORE</button>
+          <p class="time">9:30 AM - 11:00 AM</p>
+        </div>
+        <div class="cls1">
+          <img
+            src="clsimg4.png"
+            height="300"
+            width="300"
+            style="border-radius: 20px"
+          />
+          <h3>Nutrition Consultation</h3>
+          <p>Personalized nutrition consultations to help you a...</p>
+          <button id="btn" onclick="showAlert()">READ MORE</button>
+          <p class="time">2:00 PM - 3:00 PM</p>
+        </div>
+        <div class="cls1">
+          <img
+            src="clsimg5.png"
+            height="300"
+            width="300"
+            style="border-radius: 20px"
+          />
+          <h3>Nature Hikes</h3>
+          <p>Explore the beautiful natural surroundings with gu...</p>
+          <button id="btn" onclick="showAlert()">READ MORE</button>
+          <p class="time">8:00 AM - 10:00 AM</p>
+        </div>
+        <div class="cls1">
+          <img
+            src="clsimg6.png"
+            height="300"
+            width="300"
+            style="border-radius: 20px"
+          />
+          <h3>Spa and Relaxation</h3>
+          <p>Indulge in spa treatments and relaxation sessions ....</p>
+          <button id="btn" onclick="showAlert()">READ MORE</button>
+          <p class="time">1:30 PM - 3:30 PM</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="section">
+        <img src="logo.png" height="90" width="200" />
+        <p>Providing reliable yoga assist</p>
+        <div class="follow-social">
+          <a href="#" target="_blank"
+            ><i class="fa-brands fa-linkedin fa-2xl"></i
+          ></a>
+          <a href="#" target="_blank"
+            ><i class="fa-brands fa-instagram fa-2xl"></i
+          ></a>
+          <a href="#" target="_blank"
+            ><i class="fa-brands fa-twitter fa-2xl"></i
+          ></a>
+        </div>
+      </div>
+      <div class="section">
+        <h3>QUICK LINKS</h3>
+        <a href="#">About us</a>
+        <a href="#">Contact</a>
+        <a href="#">Prices</a>
+      </div>
+      <div class="section">
+        <h3>LEGAL</h3>
+        <a href="#">Terms of use</a>
+        <a href="#">Privacy policy</a>
+        <a href="#">Cookie policy</a>
+      </div>
+      <div class="section">
+        <h3>HOME LOCATION</h3>
+        <a href="#">AITS Tirupati Andhrapradesh</a>
+        <a href="#">+91-7305327903</a>
+        <a href="#">nirvanayoga@gmail.com</a>
+      </div>
+    </div>
+    <div class="cr" style="width: 1500px">
+      <p>Nirvana Yoga © 2024, by AITS</p>
+    </div>
+    <script>
+      // Function to trigger animations when elements enter the viewport
+      function animateOnScroll() {
+        const elements = document.querySelectorAll('.cls1, .child');
+        elements.forEach(element => {
+          const elementPosition = element.getBoundingClientRect().top;
+          const windowHeight = window.innerHeight;
+          if (elementPosition < windowHeight) {
+            element.classList.add('animated', 'fade-in-up');
+          }
+        });
+      }
+  
+      // Initial animation check on page load
+      animateOnScroll();
+  
+      // Event listener for scrolling
+      window.addEventListener('scroll', animateOnScroll);
+    </script>
+    <script>
+      animateOnScroll();
+    function showAlert() {
+      var myText = "Request accepted";
+      alert(myText);
+    }
+    </script>
+  </body>
+</html>

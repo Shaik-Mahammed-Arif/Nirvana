@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="navbar.css">
+    <title>Nirvana</title>
+    <style>
+        .center {
+            text-align: center;
+        }
+
+        .center p {
+            padding-left: 520px;
+            width: 500px;
+        }
+
+        .center_t {
+            margin: auto;
+            width: 50%;
+            border-collapse: collapse;
+        }
+
+        .center_t th,
+        .center_t td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        body{
+            margin:0px;
+            padding:0px;
+            font-size: large;
+        }
+        .classes {
+            display: grid;
+            align-items: center;
+            grid-template-columns: 1fr 1fr 1fr ;
+            column-gap: 2px;
+        }
+        .center h1{
+            color:#84508a
+        }
+        .text {
+            font-size: 17px;
+            padding-left: 0px;
+            margin-left: -300px;
+        }
+        .text h1{
+            color:#84508a;
+        }
+        .image{
+            width:100px;
+            transform: skew(-7deg);
+            margin-left: 50px;
+        }
+        table {
+            margin: 20px;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #b695c0;
+        }
+
+        td {
+            background-color: #dac9df;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .card {
+            border: 1px solid #b695c0;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            width: 300px;
+            box-shadow: 2px 2px 2px 2px #b695c0;
+            transform-style: preserve-3d;
+            transition: all 1.5s ease;
+        }
+        .card h2{
+            margin-top: 70px;
+        }
+        .card:hover{
+            box-shadow: 2px 2px 2px 2px darkorchid;
+            cursor: pointer;
+           transform: rotateY(180deg);
+        }
+        button {
+            width: 120px;
+            height: 50px;
+            border-radius: 10px;
+            border: 1px solid #b695c0;
+            color: darkorchid;
+        }
+        button:hover{
+            cursor:progress;
+        }
+        td:hover { 
+            background:darkorchid; 
+        }
+        .container h2{
+            color:#84508a
+        }
+        .thefront{
+            position: absolute;
+            border-radius: 10px;
+            backface-visibility: hidden;
+            overflow: hidden;
+            color: #000;
+        }
+
+        .theback{
+            border-radius: 10px;
+            backface-visibility: hidden;
+            color: #333;
+            transform: rotateY(180deg);
+        }
+        .text h1 span {
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+            display: inline-block;
+        }
+        
+        .text h1 span.fade {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div>
+            <ul>
+                <img src="logo.png" height="60px" width="180px">
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="classes.html">CLASSES</a></li>
+                <li><a href="trainers.html">TRAINERS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="center">
+        <h1>Explore Our Invigorating Classes</h1>
+        <p>We invite you to embark on a journey of self-discovery,
+            rejuvenation, and transformation. Our carefully curated
+            classes are designed to nurture your mind, body, and spirit,
+            helping you achieve a harmonious balance in your life.</p>
+        <h1>Discover a World of Wellness</h1>
+    </div>
+    <div>
+        <div class="classes">
+            <div class="image">
+                <img src="clsimg1.png" width="100" height="100">
+            </div>
+            <div class="text">
+                <h1>Yoga Classes</h1>
+                <p>Daily yoga classes led by experienced instructors. Suitable for all levels,
+                    from beginners to advanced practitioners.</p>
+            </div>
+        </div>
+        <div class="classes">
+            <div class="image">
+                <img src="clsimg2.png" width="100" height="100">
+            </div>
+            <div class="text">
+                <h1>Meditation Workshops</h1>
+                <p>Learn meditation techniques to calm your mind and reduce stress.
+                    Guided workshops for beginners and advanced meditators.</p>
+            </div>
+        </div>
+        <div class="classes">
+            <div class="image">
+                <img src="clsimg3.png" width="100" height="100">
+            </div>
+            <div class="text">
+                <h1>Fitness Bootcamp</h1>
+                <p>Intensive fitness bootcamp sessions designed to help you get in shape
+                    and boost your energy levels.</p>
+            </div>
+        </div>
+        <div class="classes">
+            <div class="image">
+                <img src="clsimg4.png" width="100" height="100">
+            </div>
+            <div class="text">
+                <h1>Nutrition Consultation</h1>
+                <p>Personalized nutrition consultations to help you achieve your health
+                    and fitness goals.</p>
+            </div>
+        </div>
+        <div class="classes">
+            <div class="image">
+                <img src="clsimg5.png" width="100" height="100">
+            </div>
+            <div class="text">
+                <h1>Nature Hikes</h1>
+                <p>Explore the beautiful natural surroundings with guided nature hikes.
+                    Discover the local flora and fauna.</p>
+            </div>
+        </div>
+        <div class="classes">
+            <div class="image">
+                <img src="clsimg6.png" width="100" height="100">
+            </div>
+            <div class="text">
+                <h1>Spa and Relaxation</h1>
+                <p>Indulge in spa treatments and relaxation sessions to unwind and rejuvenate during your retreat.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="center">
+        <h2 style="color: #84508a;">OUR COURSES</h2>
+        <table class="center_t">
+            <tr>
+                <th>COURSE</th>
+                <th>PRICE</th>
+                <th>TIMING</th>
+            </tr>
+            <tr>
+                <td>Beginners Bliss</td>
+                <td>3000</td>
+                <td>5:00am-6:00am</td>
+            </tr>
+            <tr>
+                <td>Fitness Enthusiast</td>
+                <td>3500</td>
+                <td>5:30am-6:30am</td>
+            </tr>
+            <tr>
+                <td>Ultimate Wellness Retreat</td>
+                <td>3000</td>
+                <td>6:00am-7:00am</td>
+            </tr>
+            <tr>
+                <td>Fitness bootcamp</td>
+                <td>1000</td>
+                <td>4:00am-6:00am</td>
+            </tr>
+            <tr>
+                <td>Yoga Classes</td>
+                <td>1500</td>
+                <td>4:00am-6:00am</td>
+            </tr>
+            <tr>
+                <td>Spa and Relaxation</td>
+                <td>2000</td>
+                <td>4:00am-6:00am</td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <h2 class="classes" style="color:#84508a">Start Your Journey Today</h2>
+        <p>Browse our classes, explore our schedules, and take the first step towards a
+            healthier, happier you. At Nirvana's Yoga and Fitness Retreats, we're here to
+            support your pursuit of wellness and vitality.<br>
+            Join us in embracing a life filled with balance, energy, and mindfulness. Namaste!<br>
+            Here are some of our popular courses that help you to be fit.
+        </p>
+        <div>
+            <h2 class="classes" style="color:#84508a">OUR POPULAR COURSES</h2>
+            <p style="text-align: center;">Explore unbeatable value with our top course prices. Discover affordable
+                wellness solutions that fit your budget while experiencing the highest quality
+                instruction and guidance. Your journey to better health and vitality starts here
+            </p>
+            <div class="container">
+                <div class="card">
+                    <div class="thefront">
+                        <h2>Beginners Bliss</h2>
+                        <h4>hold the card to check more details</h4>
+                    </div>
+                    <div class="theback">
+                        <p><b>3000₹</b><br>
+                            .subscription<br>
+                            .3-Day Yoga and Meditation Retreat<br>
+                            .Daily Yoga Classes<br>
+                            .Meditation Workshops<br>
+                            .Access to Spa and Relaxation
+                        </p>
+                    <button onclick="showAlert()">Get Started</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="thefront">
+                        <h2>Fitness Enthusiast</h2>
+                        <h4>hold the card to check more details</h4>
+                    </div>
+                    <div class="theback">
+                        <p><b>3500₹</b><br>
+                        .subscription<br>
+                        .5-Day Fitness Bootcamp<br>
+                        .Daily Bootcamp Sessions<br>
+                        .Yoga Classes for Flexibility<br>
+                        .Nutrition Consultation
+                        .Nature Hikes
+                    </p>
+                    <button onclick="showAlert()">Get Started</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="thefront">
+                        <h2>Ultimate Wellness Retreat</h2>
+                        <h4>hold the card to check more details</h4>
+                    </div>
+                    <div class="theback">
+                        <p><b>3000₹</b><br>
+                            .7-Day Comprehensive Retreat<br>
+                            .Daily Yoga and Meditation Classes<br>
+                            .Nutrition Consultation<br>
+                            .Guided Nature Hikes,Wellness Plan<br>
+                            .Spa and Relaxation Treatments<br>
+                        </p>
+                    <button onclick="showAlert()">Get Started</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><br>
+    <div class="footer">
+        <div class="section">
+            <img src="logo.png" height="90" width="200">
+            <p>Providing reliable yoga assist</p>
+            <div class="follow-social">
+                <a href="#" target="_blank" ><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+                <a href="#" target="_blank" ><i class="fa-brands fa-instagram fa-2xl"></i></a>
+                <a href="#" target="_blank" ><i class="fa-brands fa-twitter fa-2xl"></i></a>
+            </div>
+        </div>
+        <div class="section">
+            <h3>QUICK LINKS</h3>
+            <a href="#">About us</a>
+            <a href="#">Contact</a>
+            <a href="#">Prices</a>
+        </div>
+        <div class="section">
+            <h3>LEGAL</h3>
+            <a href="#">Terms of use</a>
+            <a href="#">Privacy policy</a>
+            <a href="#">Cookie policy</a>
+        </div>
+        <div class="section">
+            <h3>HOME LOCATION</h3>
+            <a href="#">AITS Tirupati Andhrapradesh</a>
+            <a href="#">+91-7305327903</a>
+            <a href="#">nirvanayoga@gmail.com</a>
+        </div>
+    </div>
+    <div class="cr" style="width:1500px;">
+        <p>Nirvana Yoga © 2024, by AITS</p>
+    </div>
+    <script>
+        animateOnScroll();
+      function showAlert() {
+        var myText = "Start your course today";
+        alert(myText);
+      }
+      </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script>
+        // Function to animate the table when the page loads
+        function animateTable() {
+            const table = document.querySelector('.center_t');
+            table.style.transform = 'scale(0.5)';
+            table.style.opacity = 0;
+
+            anime({
+                targets: table,
+                scale: 1,
+                opacity: 1,
+                duration: 1000,
+                easing: 'easeInOutQuad'
+            });
+
+            const rows = document.querySelectorAll('.center_t tr');
+
+            rows.forEach((row, index) => {
+                row.style.opacity = 0;
+                row.style.transform = 'translateY(20px)';
+
+                anime({
+                    targets: row,
+                    opacity: 1,
+                    translateY: 0,
+                    duration: 800,
+                    delay: 100 * index,
+                    easing: 'easeInOutQuad'
+                });
+            });
+        }
+
+        // Call the animateTable function when the DOM content is loaded
+        document.addEventListener('DOMContentLoaded', animateTable);
+
+        // JavaScript for text animation
+        document.addEventListener('DOMContentLoaded', function () {
+            const headings = document.querySelectorAll('h1');
+            headings.forEach(function (heading) {
+                const strText = heading.textContent;
+                const splitText = strText.split("");
+                heading.textContent = "";
+                
+                for(let i=0; i < splitText.length; i++) {
+                    heading.innerHTML += "<span>"+ splitText[i] +"</span>";
+                }
+                
+                let char = 0;
+                let timer = setInterval(onTick, 50);
+                
+                function onTick() {
+                    const span = heading.querySelectorAll('span')[char];
+                    span.classList.add('fade');
+                    char++
+                    
+                    if(char === splitText.length) {
+                        complete();
+                        return;
+                    }
+                }
+                
+                function complete() {
+                    clearInterval(timer);
+                    timer = null;
+                }
+            });
+        });
+    </script>
+
+</html>

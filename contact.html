@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nirvana</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+    <style>
+        .navbar li a {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar" style="background-color:#b695c0;">
+        <div>
+            <ul>
+                <img src="logo.png" height="60px" width="180px">
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="classes.html">CLASSES</a></li>
+                <li><a href="trainers.html">TRAINERS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <form method="post" action="https://script.google.com/macros/s/AKfycbxZgu2nhbQBtb5q38h00sh1e74wCWbFrioWJChCHrBzAtnZm-mUehe5dZGFSr6X__4/exec" name="contact-form" onsubmit="return showAlert()">
+            <h1>CONTACT</h1>
+            <input type="text" id="firstName" name="Firstname" placeholder="First Name" required>
+            <input type="text" id="lastName" name="Lastname" placeholder="Last Name" required>
+            <input type="email" id="email" name="Email" placeholder="Email" required>
+            <input type="text" id="mobile" name="Contact" placeholder="Mobile" required>
+            
+            <h4>Select Your Concern</h4>
+            <select id="disease" name="Disease" required>
+                <option value="">Select an option</option>
+                <option value="stress">Stress</option>
+                <option value="anxiety">Anxiety</option>
+                <option value="highbloodpressure">High Blood Pressure</option>
+                <option value="obesity">Obesity</option>
+                <option value="type2diabetes">Type 2 Diabetes</option>
+                <option value="mentalhealth">Mental Health Issues</option>
+            </select>
+            
+            <h4>Type Your Message Here...</h4>
+            <textarea name="Message" required></textarea>
+            <button type="submit" style="background-color:#c98ac5">Send Message</button><br><br>
+        </form>
+    </div>
+    
+   
+    <div class="footer" style="background-color:#b695c0;">
+        <div class="section">
+            <img src="logo.png" height="90" width="200">
+            <p>Providing reliable yoga assist</p>
+            <div class="follow-social">
+                <a href="#" target="_blank"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+                <a href="#" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+                <a href="#" target="_blank"><i class="fa-brands fa-twitter fa-2xl"></i></a>
+            </div>
+        </div>
+        <div class="section">
+            <h3>QUICK LINKS</h3>
+            <a href="#">About us</a>
+            <a href="#">Contact</a>
+            <a href="#">Prices</a>
+        </div>
+        <div class="section">
+            <h3>LEGAL</h3>
+            <a href="#">Terms of use</a>
+            <a href="#">Privacy policy</a>
+            <a href="#">Cookie policy</a>
+        </div>
+        <div class="section">
+            <h3>HOME LOCATION</h3>
+            <a href="#">AITS Tirupati Andhrapradesh</a>
+            <a href="#">+91-7305327903</a>
+            <a href="#">nirvanayoga@gmail.com</a>
+        </div>
+    </div>
+
+    <div class="cr" style="width:1520px;background-color:b695c0;">
+        <p>Nirvana Yoga © 2024, by AITS</p>
+    </div>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', function () {
+            function addAnimationWithDelay(element, animationClass, delay) {
+                setTimeout(function () {
+                    element.classList.add('animated', animationClass);
+                    element.style.visibility = 'visible';
+                }, delay);
+            }
+
+            var form = document.querySelector('.container form');
+            var footerSections = document.querySelectorAll('.footer .section');
+
+            addAnimationWithDelay(form, 'fadeInUp', 100);
+            footerSections.forEach(function (section, index) {
+                addAnimationWithDelay(section, 'slideInLeft', 300 * (index + 1));
+            });
+        });
+
+        
+            function showAlert() {
+                const disease = document.getElementById("disease").value;
+        
+                switch(disease) {
+                    case "stress":
+                        alert("Join Yoga Classes");
+                        break;
+                    case "anxiety":
+                        alert("Join Meditation Workshops");
+                        break;
+                    case "highbloodpressure":
+                        alert("Join Spa and Relaxation");
+                        break;
+                    case "obesity":
+                        alert("Join Fitness Camp");
+                        break;
+                    case "type2diabetes":
+                        alert("Join Nutrition Consultation");
+                        break;
+                    case "mentalhealth":
+                        alert("Join Nature Hikes");
+                        break;
+                    default:
+                        alert("Please select a valid concern.");
+                        return false; // Prevents form submission if no valid option is selected
+                }
+        
+                return true; // Allows form submission if valid option is selected
+            }
+        
+        
+        
+    </script>
+
+</body>
+
+</html>

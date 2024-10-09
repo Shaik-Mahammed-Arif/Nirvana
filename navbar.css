@@ -1,0 +1,27 @@
+.navbar {
+    text-decoration: none;
+    background-color: #b695c0;
+    display: inline-block;
+    width: 100%;
+    border-bottom: 3px solid #b695c0;
+    top: 0;
+    left: 0;
+    z-index: 10;
+
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar li {
+    display: inline-block;
+    padding: 0px 10px 2px 10px;
+}
+
+.navbar li a:hover {
+    text-decoration: underline;
+    transition: color .6s ease-in;
+
+}

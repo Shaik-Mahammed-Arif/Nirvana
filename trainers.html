@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Nirvana</title>
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="navbar.css">
+    <style>
+        body {
+            margin: 0px;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+            font-size: large;
+        }
+
+
+        .trainers {
+            width: 800px;
+            overflow: auto;
+            display: flex;
+            background-color: white;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .name {
+            margin-left: 20px;
+            border-radius: 10px;
+            background-color: whitesmoke;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .name img {
+            width: 170px;
+            height: 170px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .name h3,
+        .name p {
+            margin: 0;
+        }
+
+        .name:hover {
+            background-color: #f0f0f0;
+            transform: translateY(-5px);
+        }
+
+        .faq {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .button {
+            color: black;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            background-color: #b695c0;
+        }
+
+        .button:hover {
+            background-color: #a95bc1;
+        }
+
+        .faq-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .faq-content.active {
+            max-height: 1000px;
+            /* Adjust this value as needed */
+        }
+        .hidden {
+            display: none;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div>
+            <ul>
+                <img src="logo.png" height="60px" width="180px">
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="classes.html">EVENTS AND CLASSES</a></li>
+                <li><a href="trainers.html">TRAINERS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+    <div>
+        <center>
+            <h1 style="color:#84508a;">Introducing Our Committed Trainers</h1>
+        </center>
+        <p>Our team of dedicated trainers is at the heart of what we do.
+            Each member of our expert staff brings a unique blend of experience,
+            passion, and expertise to guide you on your wellness journey. Whether
+            you are seeking the tranquility of yoga, the energy of fitness bootcamps,
+            or the mindfulness of meditation, our trainers are here to support and inspire you.
+            With their guidance, you will discover the path to a healthier, happier you. Get to know our
+            trainers and let their knowledge and enthusiasm motivate you towards your goals.</p>
+        <div class="trainers">
+            <div class="name">
+                <img src="t1.png">
+                <h3>John Smith</h3>
+                <p>Fitness Coach</p>
+            </div>
+            <div class="name">
+                <img src="t2.png">
+                <h3>Alice Smith</h3>
+                <p>Yoga Instructor</p>
+            </div>
+            <div class="name">
+                <img src="t3.png">
+                <h3>Sarah Brown</h3>
+                <p>Fitness Instructor</p>
+            </div>
+            <div class="name">
+                <img src="t4.png">
+                <h3>Emily Johnson</h3>
+                <p>Meditation Guide</p>
+            </div>
+            <div class="name">
+                <img src="t5.png">
+                <h3>David Wilson</h3>
+                <p>Nutritionist</p>
+            </div>
+            <div class="name">
+                <img src="t6.png">
+                <h3>Michael Lee</h3>
+                <p>Meditation Instructor</p>
+            </div>
+        </div>
+    </div>
+    <center>
+        <h1 style="color:#84508a">FAQ's</h1>
+    </center>
+
+    <div class="faq">
+        <button class="button toggle-button">Toggle FAQ</button>
+        <div class="faq-content active">
+            <p><b style="color:#84508a">1.Do you offer classes for beginners?</b></p>
+            <p>Absolutely! We welcome beginners to our fitness and yoga training classes.
+                Our experienced instructors design classes that cater to all levels, ensuring
+                a comfortable and supportive environment for newcomers. Whether you're new to
+                fitness or yoga, our instructors will guide you through the basics, providing
+                modifications to suit your individual needs. Join us on the journey to a healthier,
+                more balanced lifestyle, starting at your own pace.</p>
+        </div>
+    </div>
+    <div class="faq">
+        <button class="button toggle-button">Toggle FAQ</button>
+        <div class="faq-content active">
+            <p><b style="color:#84508a">2.What are the benefits of practicing yoga and attending fitness classes?</b>
+            </p>
+            <p>Engaging in our fitness and yoga training classes offers a myriad of benefits for your
+                overall well-being.</p>
+            <p><b style="color:#84508a">Yoga:</b><br>
+                Physical Strength: Develops core strength, flexibility, and balance.<br>
+                Mental Clarity: Promotes stress reduction and enhances focus.<br>
+                Relaxation: Encourages relaxation through breath control and meditation.</p>
+            <p><b style="color:#84508a">Fitness Classes:</b><br>
+                Cardiovascular Health: Boosts heart health and improves endurance.<br>
+                Muscle Tone: Enhances muscle definition and overall body strength.<br>
+                Weight Management: Aids in weight loss and maintaining a healthy body composition.<br>
+            </p>
+        </div>
+    </div>
+    <div class="faq">
+        <button class="button toggle-button">Toggle FAQ</button>
+        <div class="faq-content active">
+            <p><b style="color:#84508a">3.What types of fitness and yoga classes do you offer?</b>
+            <p>Your can refer to our available classes by clicking on the classes button</p>
+            <button class="button"><a href="classes.html">Classes</a></button><br>
+            </p>
+        </div>
+    </div>
+    <div class="faq">
+        <button class="button toggle-button">Toggle FAQ</button>
+        <div class="faq-content active">
+            <p><b style="color:#84508a">4.How do I handle injuries or health concerns during a class? </b></p>
+            <p>Your well-being is our priority, and we take injuries and health concerns seriously. If you have any
+                existing
+                injuries or health conditions, please follow these guidelines during our fitness and yoga training
+                classes:
+            </p>
+            <p>
+                <b style="color:#84508a">Seek Professional Advice:</b>If you have a specific injury or health condition,
+                consider consulting with
+                a healthcare professional before participating in a new fitness regimen.<br>
+                <b style="color:#84508a">Gradual Progress:</b>Take a gradual approach to your practice. It's okay to
+                start
+                with less intensity and
+                gradually increase as you feel comfortable.<br>
+                <b style="color:#84508a">Stay Hydrated:</b>Hydration is crucial. Make sure to drink water throughout the
+                class, especially if you
+                have any health concerns that may require extra attention to hydration.<br>
+                <b style="color:#84508a">Ask for Assistance:</b>If you're unsure about a particular pose or exercise,
+                ask
+                for assistance. Our
+                instructors are here to help you with proper form and technique.<br>
+                <b style="color:#84508a">Listen to Your Body:</b>Pay close attention to how your body feels during the
+                class. If something doesn't
+                feel right, it's okay to skip a movement or take a break.<br>
+                <b style="color:#84508a">Modify Poses or Exercises:</b>Our instructors are trained to provide
+                modifications
+                to accommodate various
+                fitness levels and conditions. Don't hesitate to ask for alternative poses or exercises.<br>
+                <b style="color:#84508a">Inform Your Instructor:</b>Before the class begins, discreetly inform your
+                instructor about any injuries
+                or health concerns you may have.<br>
+            </p>
+        </div>
+    </div>
+
+    <div class="faq">
+        <button class="button toggle-button">Toggle FAQ</button>
+        <div class="faq-content active">
+            <p><b style="color:#84508a">5.Can I try a class before becoming a member?</b></p>
+            <p>Absolutely! We encourage you to experience the positive and energizing atmosphere
+                of our fitness and yoga training classes before committing to a membership.
+                We offer trial classes for newcomers, providing you with the opportunity to
+                explore our diverse class offerings and meet our experienced instructors.
+                Simply check our schedule, choose a class that suits your interest, and join
+                us for a complimentary trial session. </p>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="section">
+            <img src="logo.png" height="90" width="200">
+            <p>Providing reliable yoga assist</p>
+            <div class="follow-social">
+                <a href="#" target="_blank"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+                <a href="#" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+                <a href="#" target="_blank"><i class="fa-brands fa-twitter fa-2xl"></i></a>
+            </div>
+        </div>
+        <div class="section">
+            <h3>QUICK LINKS</h3>
+            <a href="#">About us</a>
+            <a href="#">Contact</a>
+            <a href="#">Prices</a>
+        </div>
+        <div class="section">
+            <h3>LEGAL</h3>
+            <a href="#">Terms of use</a>
+            <a href="#">Privacy policy</a>
+            <a href="#">Cookie policy</a>
+        </div>
+        <div class="section">
+            <h3>HOME LOCATION</h3>
+            <a href="#">AITS Tirupati Andhrapradesh</a>
+            <a href="#">+91-7305327903</a>
+            <a href="#">nirvanayoga@gmail.com</a>
+        </div>
+    </div>
+    <div class="cr" style="width:1500px;">
+        <p>Nirvana Yoga © 2024, by AITS</p>
+    </div>
+    <script>
+        document.querySelectorAll('.toggle-button').forEach(button => {
+            button.addEventListener('click', () => {
+                const faqContent = button.nextElementSibling;
+                faqContent.classList.toggle('active');
+            });
+        });
+        function scaleIn(element, duration) {
+            var start = performance.now();
+            var initialScale = 0.5;
+    
+            function step(timestamp) {
+                var progress = timestamp - start;
+                var scale = initialScale + progress / duration;
+                if (scale >= 1) {
+                    element.style.transform = 'scale(1)';
+                } else {
+                    element.style.transform = 'scale(' + scale + ')';
+                    window.requestAnimationFrame(step);
+                }
+            }
+    
+            window.requestAnimationFrame(step);
+        }
+    
+        // Wait for the DOM content to load
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get elements for animation
+            var trainers = document.querySelectorAll('.trainers .name');
+            var faqs = document.querySelectorAll('.faq');
+    
+            // Add animation to trainers
+            trainers.forEach(function(trainer) {
+                // Remove hidden class to show element
+                trainer.classList.remove('hidden');
+                // Start scaleIn animation
+                scaleIn(trainer, 1000);
+            });
+    
+            // Add animation to FAQs
+            faqs.forEach(function(faq) {
+                // Remove hidden class to show element
+                faq.classList.remove('dden');
+                // Start scaleIn animation
+                scaleIn(faq, 1000);
+            });
+        });
+    
+    </script>
+</body>
+
+</html>

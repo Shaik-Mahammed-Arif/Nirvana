@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Yoga & Fitness</title>
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            font-size: large;
+        }
+
+        header {
+            border-top: 2px solid #e0f2f1;
+            height: 125px;
+            background-color: #e0f2f1;
+            position: sticky;
+            top: 1px;
+            z-index: 100;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, .1), 0 2px 4px -2px rgba(0, 0, 0, .1);
+        }
+
+        .left {
+            display: inline-block;
+            position: absolute;
+            top: 10px;
+            left: 34px;
+            margin: 0;
+        }
+
+        .left img {
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+        }
+
+        .left div {
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            margin: 5px 0;
+            color: #333;
+        }
+
+        .mid {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 30px 0;
+        }
+
+        .mid a {
+            padding: 15px;
+            margin: 0 10px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .mid a:hover {
+            color: #ba86c0;
+        }
+        button {
+            background-color: #84508a;
+            font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+            color: #fff;
+            text-decoration: none;
+            font-size: 15px;
+            border: none;
+            padding: 10px 14px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .text {
+            font-size: 20px;
+            line-height: 1.5;
+            margin: 40px;
+        }
+
+        button:hover {
+            background-color: #ba86c0;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #84508a;
+            text-align: center;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        img {
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #e3f2f4;
+
+        }
+
+        .container,
+        .choose {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .client {
+            text-align: center;
+            margin: 15px;
+            background-color: #b695c0;
+            box-shadow: 0 4px 8px rgba(0, 121, 107, 0.2);
+            padding: 15px;
+            border-radius: 10px;
+            
+        }
+
+        .client img {
+            height: 100px;
+            width: 85px;
+            border-radius: 50%;
+        }
+
+        .client p {
+            margin-top: 10px;
+            font-size: 16px;
+            line-height: 1.4;
+        }
+
+        .links a,
+        .contact p {
+            display: block;
+            margin: 5px;
+            text-decoration: underline;
+            font-size: 20px;
+            color: black;
+        }
+
+        .block {
+            max-width: 85%;
+            margin: 50px auto;
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .ele {
+            text-align: center;
+            margin: 15px;
+            box-shadow: 0 4px 8px rgba(0, 121, 107, 0.2);
+            padding: 15px;
+            border-radius: 10px;
+            width: 20%;
+            height: 172px;
+        }
+
+        .percentage {
+            display: inline-block;
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            background-color: #b695c0;
+            padding: 8px 12px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+
+        .choose p {
+            font-size: 28px;
+            line-height: 1.6;
+            margin-top: 20px;
+        }
+        .fade-in {
+            opacity: 0;
+            animation: fadeInAnimation 1.5s ease-in-out forwards;
+        }
+        
+        @keyframes fadeInAnimation {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        // JavaScript code
+        window.onload = function() {
+            alert("Welcome to our Yoga & Fitness website!");
+        };
+        function changeBackgroundColor() {
+            // Get a reference to the body element
+            var body = document.body;
+
+            // Generate a random color
+            var randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+
+            // Set the background color of the body
+            body.style.backgroundColor = randomColor;
+        }
+        var quotes = [
+            "The body achieves what the mind believes.",
+            "Yoga is the journey of the self, through the self, to the self.",
+            "Inhale the future, exhale the past.",
+            "The pose begins when you want to leave it.",
+            "Change is not something that we should fear. Rather, it is something that we should welcome.",
+            "Yoga is the perfect opportunity to be curious about who you are."
+        ];
+
+        // Function to display a random quote
+        function displayRandomQuote() {
+            // Get a reference to the quote element
+            var quoteElement = document.getElementById('random-quote');
+
+            // Get a random quote from the array
+            var randomIndex = Math.floor(Math.random() * quotes.length);
+            var randomQuote = quotes[randomIndex];
+
+            // Set the random quote as the innerHTML of the quote element
+            quoteElement.innerHTML = randomQuote;
+        }
+
+        // Call the function to display a random quote when the page loads
+        window.onload = function() {
+            alert("Welcome to our Yoga & Fitness website!");
+            displayRandomQuote();
+        };
+        // JavaScript for text reveal animation
+        document.addEventListener('DOMContentLoaded', function () {
+            const paragraphs = document.querySelectorAll('p');
+            paragraphs.forEach(function (paragraph) {
+                paragraph.classList.add('fade-in');
+            });
+        });
+    </script>
+    <button onclick="changeBackgroundColor()">Change Background Color</button>
+    <div id="random-quote" style="text-align: center; margin-top: 20px; font-size: 24px;"></div>
+
+    
+    <div class="navbar">
+        <div>
+            <ul>
+                <img src="logo.png" height="60px" width="180px">
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="classes.html">EVENTS AND CLASSES</a></li>
+                <li><a href="trainers.html">TRAINERS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="block">
+        <h1><b>ABOUT US</b></h1>
+        <p class="text">We believe in the power of holistic well-being-nurturing the body, calming the mind, and
+            inspiring the
+            spirit. Our studio is more than just a place to work out; it's a community where individuals of all levels
+            come together to embark on a transformative journey of self-discovery.</p>
+    </div>
+    <div class="block">
+        <h2>Our Mission</h2>
+        <p class="text">Our mission is to create a space where you can find balance, strength, and serenity. Through the
+            practices
+            of yoga and fitness, we aim to guide and support you in achieving your health and wellness goals. We believe
+            in fostering a sense of community and empowerment, encouraging each individual to embrace their unique
+            journey towards a healthier and happier life.</p>
+    </div>
+    <div class="block">
+        <h2>Join Our Community</h2>
+        <p class="text">Whether you are a seasoned yogi, a fitness enthusiast, or someone exploring these practices for
+            the first
+            time, we invite you to join our vibrant community. Discover the benefits of mindfulness, movement, and
+            mindful living with us.</p>
+    </div>
+    <div class="block">
+        <h2>Why Choose Us?</h2>
+        <div class="choose">
+            <div class="ele">
+                <div class="percentage">90%</div>
+                <p>improved state of mind</p>
+            </div>
+            <div class="ele">
+                <div class="percentage">70%</div>
+                <p>less body fat</p>
+            </div>
+            <div class="ele">
+                <div class="percentage">60%</div>
+                <p>more energy</p>
+            </div>
+            <div class="ele">
+                <div class="percentage">99%</div>
+                <p>optimism</p>
+            </div>
+        </div>
+    </div>
+    <div class="block">
+        <h2>Reviews from our clients</h2>
+        <div class="container">
+            <div class="client">
+                <img src="srilekha.jpg" alt="not found" height="100" width="85"><br>
+                <p><b>.Srilekha---</b> I attended Yoga and Fitness Retreat and it was a life-changing experience. The
+                    yoga
+                    classes were invigorating, the meditation workshops brought me inner peace, and the nature hikes
+                    were simply breathtaking. The instructors were top-notch, and the whole retreat was well-organized.
+                    I left feeling rejuvenated and more in tune with my body and mind. Highly recommend!</p>
+            </div>
+            <div class="client">
+                <img src="tharun.png" alt="not found" height="100" width="90"><br>
+                <p><b>.Tharun---</b> The Ultimate Wellness Retreat at Nirvana's was a true gift to myself.
+                    The combination of yoga, meditation, and fitness was exactly what I needed. The personalized
+                    wellness plan helped me make lasting changes to my lifestyle. The serene natural surroundings
+                    and the supportive community made this retreat unforgettable.</p>
+            </div>
+            <div class="client">
+                <img src="kavya.jpg" alt="not found" height="100" width="85"><br>
+                <p><b>.Kavyanjali---</b> I've been on many fitness retreats, but Nirvana's Fitness Bootcamp
+                    was on another level. The trainers pushed me to my limits, and the results were incredible.
+                    The nutrition consultation wasan eye-opener, and the spa sessions were the
+                    perfect way to recover. If you're serious about fitness, this
+                    is the retreat for you!</p>
+            </div>
+            <div class="client">
+                <img src="meghani.png" alt="not found" height="100" width="85"><br>
+                <p><b>.Meghani---</b> Attending Nirvana's Ultimate Wellness Retreat proved to
+                    be a valuable self-care experience. The blend of yoga, meditation, and fitness
+                    provided the perfect balance I was seeking. The individualized wellness program supported
+                    me in implementing sustainable lifestyle changes. The tranquil natural environment,
+                    coupled with a nurturing community, turned this retreat into a
+                    memorable and impactful journey.</p>
+            </div>
+        </div>
+    </div>
+    <div class="block">
+        <h2>MISSION STATEMENT AND COMMITMENT TO WELLNESS</h2>
+        <p class="text">At Yoga & Fitness,our mission is to inspire and empower individuals to lead healthier and
+            happier lives. We
+            are
+            committed to fostering a community of well-being and providing quality instruction that caters to diverse
+            fitness levels.
+        </p>
+    </div>
+    <div class="footer">
+        <div class="section">
+            <img src="logo.png" height="90" width="200">
+            <p>Providing reliable yoga assist</p>
+            <div class="follow-social">
+                <a href="#" target="_blank" ><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+                <a href="#" target="_blank" ><i class="fa-brands fa-instagram fa-2xl"></i></a>
+                <a href="#" target="_blank" ><i class="fa-brands fa-twitter fa-2xl"></i></a>
+            </div>
+        </div>
+        <div class="section">
+            <h3>QUICK LINKS</h3>
+            <a href="#">About us</a>
+            <a href="#">Contact</a>
+            <a href="#">Prices</a>
+        </div>
+        <div class="section">
+            <h3>LEGAL</h3>
+            <a href="#">Terms of use</a>
+            <a href="#">Privacy policy</a>
+            <a href="#">Cookie policy</a>
+        </div>
+        <div class="section">
+            <h3>HOME LOCATION</h3>
+            <a href="#">AITS Tirupati Andhrapradesh</a>
+            <a href="#">+91-7305327903</a>
+            <a href="#">nirvanayoga@gmail.com</a>
+        </div>
+    </div>
+    <div class="cr" style="width:1500px;">
+        <p>Nirvana Yoga © 2024, by AITS</p>
+    </div>
+
+</body>
+
+</html>
